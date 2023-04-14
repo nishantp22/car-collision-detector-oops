@@ -9,8 +9,9 @@ The class also has the following methods:<br>
         4. accelerate(): This will increase the x,y,z componants of speed based on the inputs provided by the user.<br>
         5. decelerate() : This will decrease the x,y,z componants of speed based on the inputs provided by the user.<br>
         6. move() : This will increment the current x,y,z coordinatess by the current x,y,z componants of speed.<br>
-        7. detectCollision() : This method will take a Car object as input and check if the self car and the car passed as argument have collided or not.<br>
-        8. timeToCollision() : This method will print whether the two cars will collide in the future based on their current positions and velocities
+        7. distanceBetweenCars() : This method calculates the distance between two cars. It takes a Car object as an argument.
+        8. detectCollision() : This method will take a Car object as input and check if the self car and the car passed as argument have collided or not.<br>
+        9. timeToCollision() : This method will print whether the two cars will collide in the future based on their current positions and velocities
                                and if they collide, the method will also print the time before collison and the distance of collision point from the car
                                passed as argument.<br>
 <br>                               
