@@ -15,7 +15,7 @@ The class also has the following methods:<br>
                                and if they collide, the method will also print the time before collison and the distance of collision point from the car
                                passed as argument.<br>
 <br>                               
-We first take an input from the user about the number of cars present. Then we store all the cars in a vector of cars. Then we perform suitable functions on any car under consideration. Also, we are assuming the inputs to be valid, weherever necessary. <br>
+We first take an input from the user about the number of cars present. Then we store all the cars in a vector of cars. Then we perform suitable functions on any car under consideration.<br>
 <br>
 The approach used to check whether the two cars will collide or not is based on their relative posiitons and relative velocity :<br> 
        1. If their relative posiiton is zero, then they have already collided.<br>
@@ -26,4 +26,5 @@ The approach used to check whether the two cars will collide or not is based on 
 <br>
 Assumptions :<br>
       1. The cars are moving in a straight line while checking the time of collision i.e. They will not accelerate till the time of collision.<br>
+      2. The user always provides valid inputs, wherever asked.
         
