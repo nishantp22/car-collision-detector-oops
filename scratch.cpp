@@ -83,10 +83,6 @@ class Car{
                     cin>>idx;
                     op=7;
                     return idx-1;
-                case 8:
-                    cout<<"Bye :)";
-                    op=8;
-                    return -1;
             }
         }
         
