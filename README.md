@@ -13,7 +13,9 @@ The class also has the following methods:<br>
         8. timeToCollision() : This method will print whether the two cars will collide in the future based on their current positions and velocities
                                and if they collide, the method will also print the time before collison and the distance of collision point from the car
                                passed as argument.<br>
-<br>                                
+<br>                               
+We first take an input from the user about the number of cars present. Then we store all the cars in a vector of cars. Then we perform suitable functions on any car under consideration<br>
+<br>
 The approach used to check whether the two cars will collide or not is based on their relative posiitons and relative velocity :<br> 
        1. If their relative posiiton is zero, then they have already collided.<br>
        2. If their relative position is non-zero, but their relative velocity is zero, then they can never collide<br>
@@ -22,7 +24,5 @@ The approach used to check whether the two cars will collide or not is based on 
           that car wrt the other car, then A.B=-|A||B|)<br>
 <br>
 Assumptions :<br>
-      1. There are only two cars(if there are more than two, we can store the Car objects in a vector and run a search to check collision with a particular
-         car based on its model and make).<br>
-      2. The cars are moving in a straight line while checking the time of collision i.e. They will not accelerate till the time of collision.<br>
+      1. The cars are moving in a straight line while checking the time of collision i.e. They will not accelerate till the time of collision.<br>
         
