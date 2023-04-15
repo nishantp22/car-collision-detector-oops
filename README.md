@@ -25,7 +25,7 @@ The approach used to check whether the two cars will collide or not is based on 
           that car wrt the other car, then A.B=-|A||B|)<br>
 <br>
 Assumptions :<br>
-      1. The cars are moving in a straight line while checking the time of collision i.e. They will not accelerate till the time of collision.<br>
+      1. The cars are moving uniformly, in a straight line while checking the time of collision i.e. They will not accelerate or change direction till the time of collision.<br>
       2. The user always provides valid inputs, wherever asked.<br>
       <br>
 (PS-I was also thinking of incorporating inheritance, probably making a derived class named SpecialCar which would have extra paraemters such as power value which would be the time in seconds from that particular instant till which the car would be able to pass through any other car, to avoid collisions. But I could not implement the approach as I was not sure on how to use the function timeTillCollision in that case where there are two objects of different classes.)
