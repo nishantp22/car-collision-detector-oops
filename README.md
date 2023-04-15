@@ -21,7 +21,7 @@ The approach used to check whether the two cars will collide or not is based on 
        1. If their relative posiiton is zero, then they have already collided.<br>
        2. If their relative position is non-zero, but their relative velocity is zero, then they can never collide<br>
        3. If both the relative position and the relative velocitites are non zero, and the the angle between them is pi radians, then they will collide, else they
-          will not collide(using cos(theta)=A.B/|A||B|,if theta is pi i.e if relative position of one car wrt other is anti parallel to relative velocity of
+          will not collide(for any two vectors A and B, if theta is the angle between them, then by using cos(theta)=A.B/|A||B|,if theta is pi i.e if relative position of one car wrt other is anti parallel to relative velocity of
           that car wrt the other car, then A.B=-|A||B|)<br>
 <br>
 Assumptions :<br>
