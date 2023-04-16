@@ -8,7 +8,8 @@ The class also has the following methods:<br>
                     (notice that in every case in the switch case statement of method menu(), there is a statement op=x,where op is a global/static variable. This means that the value of op is equal to the operation user
                     wants to perform for that particular car. 
                     for return value of menu(): the method menu() returns either -1, when there is no involvement of two cars in a method, or returns 
-                    the index of the 2nd car based on user's input, if the method involves two cars)<br>
+                    the index of the 2nd car based on user's input, if the method involves two cars. We will use the op value and the return value in the main
+                    function, as required)<br>
         3. printCurrentData() : This will print the data currently stored in all the attributes.<br>
         4. accelerate(): This will increase the x,y,z componants of speed based on the inputs provided by the user.<br>
         5. decelerate() : This will decrease the x,y,z componants of speed based on the inputs provided by the user.<br>
@@ -20,7 +21,7 @@ The class also has the following methods:<br>
                                passed as argument.<br>
 <br>                               
 We first take an input from the user about the number of cars present. Then we store all the cars in a vector of cars. Then we ask the user whether he wants to analyse any one of the cars(like increase its speed, move, or check collision with another car). The user can input 0 or 1 at this stage : <br>
-1. If the user inputs 1, we ask the user about the car he wants to analyse(each car has a number from 1 to n, the user has to provide that number as input). Then the menu() method is called for that particular car and user has to select a choice from the menu.<br>
+1. If the user inputs 1, we ask the user about the car he wants to analyse(each car has a number from 1 to n, the user has to provide that number as input). Then the menu() method is called for that particular car and user has to select a choice from the menu. Then the user selects a choice and op is set to that particular choice and the menu() returns a value. Finally, based on the op value and returned value of menu(), operations are performed on one/two cars<br>
 2. If the user inputs 0, we terminate the loop and the execution of program is completed. <br>
 <br>
 The approach used to check whether the two cars will collide or not is based on their relative posiitons and relative velocity :<br> 
