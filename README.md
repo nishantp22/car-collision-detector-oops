@@ -15,7 +15,7 @@ The class also has the following methods:<br>
                                and if they collide, the method will also print the time before collison and the distance of collision point from the car
                                passed as argument.<br>
 <br>                               
-We first take an input from the user about the number of cars present. Then we store all the cars in a vector of cars. Then we ask the user whether he wants to analyse any one of the cars(like increase its speed, move, or check collision with another car).The user can input 0 or 1 at this stage<br>
+We first take an input from the user about the number of cars present. Then we store all the cars in a vector of cars. Then we ask the user whether he wants to analyse any one of the cars(like increase its speed, move, or check collision with another car). The user can input 0 or 1 at this stage : <br>
 1. If the user inputs 1, we ask the user about the number of car he wants to analyse(from 1 to n). Then the menu() method is called for that particular car and user has to select a choice from the menu.<br>
 2. If the user inputs 0, we terminate the loop and the execution of program is completed. <br>
 <br>
