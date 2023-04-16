@@ -45,7 +45,11 @@ class Car{
             int choice;
             cin>>choice;
             int idx;
-            switch(choice){
+            switch(choice){     //switch case statement which will execute different functions based on user's choice
+                    /*notice that in every case, there is a statement op=x. this means that the value of op is equal to the operation user
+                    wants to perform for that particular car. 
+                    for return value: the method menu() returns either -1, when there is no involvement of two cars in a method, or returns 
+                    the index of the 2nd car which is involved in that particular method, based on user's input*/
                 case 1:
                     printCurrentData();
                     op=1;
@@ -171,7 +175,7 @@ class Car{
        }
 };
 int main(){
-    vector<Car>Cars;
+    vector<Car>Cars;        //an array of cars
     int n=0;
     cout<<"Enter Number of cars : ";
     cin>>n;
@@ -183,23 +187,23 @@ int main(){
     while(1){
         cout<<"\n";
         int id;
-        int y=0;
-        cout<<"Do you wanna analyse the cars? (Type 1 for YES and 0 for NO) : ";
+        int y=0;    
+        cout<<"Do you wanna analyse the cars? (Type 1 for YES and 0 for NO) : ";      
         cin>>y;
         if(y!=0&&y!=1){
             cout<<"Invalid response :(\n";
             continue;
         }
         else if(y==0) {
-            cout<<"\n       Okay, Bye :)";
+            cout<<"\n       Okay, Bye :)";      //exiting the loop if the user does not want to analyse any further
             break;
         }
-        cout<<"Enter the number of a car you wanna analyse(1<=number<=n) : ";
+        cout<<"Enter the number of a car you wanna analyse(1<=number<=n) : ";      
         cin>>id;
         int t=Cars[id-1].menu(id-1);
-        switch(op){
+        switch(op){     //for distanceBetweenCars, detectCollision, timeTocollison, we are using the value of op(as stated above)
             case 5:
-                Cars[id-1].distanceBetweenCars(Cars[t]);
+                Cars[id-1].distanceBetweenCars(Cars[t]);   //running the distanceBetweenCars method for 1st car taking 2nd car as argument(return value of menu)
                 break;
             case 6:
                 Cars[id-1].detectCollision(Cars[t]);
