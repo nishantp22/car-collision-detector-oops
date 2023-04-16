@@ -5,6 +5,10 @@ A class named Car has been created which has attributes : model, make, year of m
 The class also has the following methods:<br>
         1. A Constructor which would initialise the values of all the attributes through inputs provided by the user.<br>
         2. menu() : The user will be asked to input a number and based on the input, various other methods will be called.<br>
+                    (notice that in every case in the switch case statement of method menu(), there is a statement op=x. this means that the value of op is equal to the operation user
+                    wants to perform for that particular car. 
+                    for return value: the method menu() returns either -1, when there is no involvement of two cars in a method, or returns 
+                    the index of the 2nd car which is involved in that particular method, based on user's input)
         3. printCurrentData() : This will print the data currently stored in all the attributes.<br>
         4. accelerate(): This will increase the x,y,z componants of speed based on the inputs provided by the user.<br>
         5. decelerate() : This will decrease the x,y,z componants of speed based on the inputs provided by the user.<br>
