@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-int i=0;
-int op=0;
+int i=0;                        //this variable stores the number of cars(acts as a static variable)
+int op=0;                       //this variable will store the menu choice input by useer as we will see later in the program
 class Car{
     public:
-        string make="";
+        string make="";         //setting initial values as blank
         string model="";
         int year;
         int x=0;
