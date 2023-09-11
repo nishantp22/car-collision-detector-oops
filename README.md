@@ -1,6 +1,5 @@
-# Mastering-Web3-Task
-This is a repository for the Mastering Web3 Task<br>
-The task was to implement OOP in any supported programming language, hence C++ has been used.<br>
+# Car Collision Detector Using Objective Oriented Programming
+This is my first github repository which I created while learning OOPs in C++<br>
 A class named Car has been created which has attributes : model, make, year of manufacture, (x,y,z) coordinates and (x,y,z) componants of speed.<br>
 The class also has the following methods:<br>
         1. A Constructor which would initialise the values of all the attributes through inputs provided by the user.<br>
@@ -35,4 +34,4 @@ Assumptions :<br>
       1. The cars are moving uniformly, in a straight line while checking the time of collision i.e. They will not accelerate or change direction till the time of collision.<br>
       2. The user always provides valid inputs, wherever asked.<br>
       <br>
-(PS-I was also thinking of incorporating inheritance, probably making a derived class named SpecialCar which would have extra parameters such as power value which would be the time in seconds from that particular instant till which the car would be able to pass through any other car, to avoid collisions. But I could not implement the approach as I was not sure on how to use the function timeTillCollision in that case where there are two objects of different classes.)
+(PS-I was also thinking of incorporating inheritance, probably making a derived class named SpecialCar which would have extra parameters such as power value which would be the time in seconds from that particular instant till which the car would be able to pass through any other car, to avoid collisions. But I could not implement the approach as I was not sure on how to use the function `timeTillCollision` in that case where there are two objects of different classes.)
